@@ -9,7 +9,7 @@
     <div class="container">
 
       <div class="intro-img">
-        <img src="img/images/home-img.png" alt="" class="mg-fluid">
+        <img src="{{ asset('img/images/home-img.png') }}" alt="" class="mg-fluid">
       </div>
 
       <div class="intro-info">
