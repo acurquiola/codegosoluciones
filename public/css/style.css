@@ -1,5 +1,5 @@
 /*
-  Theme Name: NewBiz
+  Theme Name: CodeGO
   Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
@@ -125,19 +125,20 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 80px;
+  height: 90px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #fff;
+  background: #2d032573;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 60px;
+  height: 70px;
   padding: 10px 0;
+  background: #306495 !important;
 }
 
 #header .logo h1 {
@@ -158,8 +159,8 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin: 2px 0;
+  max-height: 46px;
 }
 
 .main-pages {
@@ -176,6 +177,8 @@ h6 {
   background: url("../img/intro-bg.png") center bottom no-repeat;
   background-size: cover;
   padding: 200px 0 120px 0;
+  background-color: #ababab;
+  background-blend-mode: multiply;
 }
 
 #intro .intro-img {
@@ -196,7 +199,7 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #74b5fc;
+  color: #ff8ad5;
   text-decoration: underline;
 }
 
@@ -263,7 +266,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #004289;
+  color: #fff;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -274,8 +277,10 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid #fff; */
 }
 
 .main-nav .drop-down ul {
