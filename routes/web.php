@@ -18,6 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::prefix('adm/')->group(function(){
+
+	Route::get('admin/register', 'AdminController@create')->name('admin.register');
+	Route::post('admin/register', 'AdminController@store')->name('admin.register.store');
+	Route::get('/', 'Auth\Admin\LoginController@login')->name('admin.auth.login');
+	Route::post('login', 'Auth\Admin\LoginController@loginAdmin')->name('admin.auth.loginAdmin');
+	Route::post('logout', 'Auth\Admin\LoginController@logout')->name('admin.auth.logout');
+	
 	Route::get('/home', 'HomeController@index')->name('home');
 
 });
