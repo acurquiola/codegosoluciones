@@ -86,12 +86,14 @@
         .always(function(response, status, responseObject){
           try{
             var respuesta=JSON.parse(responseObject.responseText);
-              if(respuesta.status==1)
-                $('#sendmessage').show('slow');
+              if(respuesta.status==1){
+                $('#sendmessage').html(respuesta.text).show('slow');
                 $('#errormessage').hide('slow');
-              else
-                $('#errormessage').show('slow');
+              }
+              else{
+                $('#errormessage').html(respuesta.text).show('slow');
                 $('#sendmessage').hide('slow');
+              }
             }
             catch(e)
             {
