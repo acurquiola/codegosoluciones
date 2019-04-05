@@ -12,14 +12,15 @@
             <ul>
               <li><a href="#intro">Home</a></li>
               <li><a href="#services">Servicios</a></li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-3 col-md-6 footer-contact footer-links">
             <h4>Contáctanos</h4>
             <p>
-              <strong>Tlf:</strong> +45 11 22547749<br>
-              <strong>Email:</strong> info@codego-soluciones.com<br>
+              <a href="https://wa.me/+5491122547749"> <strong>Teléfono: </i></strong> +45 11 22547749 </a><br>
+              <a href="mailto:info@codego-soluciones.com"> <strong>Email:</strong> info@codego-soluciones.com</a><br>
             </p>
             
 

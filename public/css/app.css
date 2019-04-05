@@ -12,3 +12,11 @@
 	border-top: 1px solid #417bfe;
 	color: #293d50
 }
+
+.footer-contact a{
+	color: #FFF !important;
+}
+
+.footer-contact a:hover{
+	text-decoration: underline;
+}
