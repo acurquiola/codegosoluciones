@@ -22,17 +22,18 @@
 
         <div class="row wow fadeInUp">
 
-
-  
-          
-          <div class="col-lg-12">
-            <div class="row justify-content-lg-center">
-              <div class="form">
-              <div class="social-links justify-content-md-center">
+            <div class="col-lg-4">
+              <div class="social-links d-flex justify-content-center">
                 <a href="https://wa.me/+5491122547749" target="_blank" ><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/codegosoluciones" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/codegosoluciones" class="instagram"><i class="fab fa-instagram"></i></a>
               </div>
+              <div class="text-contact">
+                <h5>Cuéntanos tu idea, nosotros te ayudaremos a conseguir la solución que vaya con tu proyecto</h5>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="form">
                 <div id="sendmessage">¡Tu mensaje ha sido enviado!</div>
                 <div id="errormessage"></div>
                 <form action="" method="post" role="form" class="contactForm">
@@ -58,7 +59,7 @@
                 </form>
               </div>
             </div>
-          </div>
+           
 
         </div>
 

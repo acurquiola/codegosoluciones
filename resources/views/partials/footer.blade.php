@@ -4,7 +4,7 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <img src="{{ asset('img/logos/logo-codego-sinfondo.png') }}" alt="" class="img-fluid">
+            <img src="{{ asset('img/logos/logo-codego-sinfondo-footer.png') }}" alt="" class="img-fluid" style="width: 80%">
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
@@ -24,6 +24,7 @@
             
 
             <div class="social-links">
+              <a href="https://wa.me/+5491122547749" target="_blank" ><i class="fab fa-whatsapp"></i></a>
               <a href="https://www.facebook.com/codegosoluciones" class="facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="https://www.instagram.com/codegosoluciones" class="instagram"><i class="fab fa-instagram"></i></a>
             </div>
