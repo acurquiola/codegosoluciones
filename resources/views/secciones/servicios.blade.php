@@ -6,7 +6,7 @@
 
          <header class="section-header">
              <h3>Servicios</h3>
-             <p>Somos tu mejor opción para mostrarte en internet.</p>
+             <p>La mejor opción para mostrarte en internet somos nosotros y lo entenderás con nuestros servicios</p>
          </header>
 
          <div class="row">
@@ -30,14 +30,29 @@
                  <div class="box">
                      <div class="icon"><i class="fas fa-star" style="color: #3fcdc7;"></i></div>
                      <h4 class="title"><a href="">Posicionamiento Web</a></h4>
-                     <p class="description">Todos buscamos información en Google. Es hora de que tu negocio salga en lo más alto.</p>
+                     <p class="description">Todos buscamos información en Google. Es hora de que tu negocio salga en lo más alto de los buscadores.</p>
                  </div>
              </div>
              <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                  <div class="box">
-                     <div class="icon"><i class="fas fa-palette" style="color: #41cf2e;"></i></div>
+                     <div class="icon"><i class="fas fa-tools" style="color: #41cf2e;"></i></div>
+                     <h4 class="title"><a href="">Autoadministrable</a></h4>
+                     <p class="description">Cuentas con un panel administrativo para cambiar toda la información cómo, cuándo y dónde quieras</p>
+                 </div>
+             </div>    
+
+             <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                 <div class="box">
+                     <div class="icon"><i class="fas fa-palette" style="color: #12026D;"></i></div>
                      <h4 class="title"><a href="">Apariencia</a></h4>
                      <p class="description">Diseños personalizados y a la medida de tus necesidades.</p>
+                 </div>
+             </div>
+             <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                 <div class="box">
+                     <div class="icon"><i class="fas fa-mobile-alt" style="color: #e5753d;"></i></div>
+                     <h4 class="title"><a href="">Diseño Responsivo</a></h4>
+                     <p class="description">Tu sitio web se verá increíble en todos los dispositivo.</p>
                  </div>
              </div>    
              
