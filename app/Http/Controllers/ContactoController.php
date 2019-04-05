@@ -26,8 +26,7 @@ class ContactoController extends Controller
             'mensaje' => $request->input('message')
         ];
 
-
-        Mail::to('info@codego-soluciones')->send(new Contacto($forminput));
+        Mail::to('info@codego-soluciones.com')->send(new Contacto($forminput));
 
         return response()->json(['status' => '1', 'text' => 'Mensaje enviado exitósamente']);
         

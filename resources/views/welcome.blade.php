@@ -88,8 +88,10 @@
             var respuesta=JSON.parse(responseObject.responseText);
               if(respuesta.status==1)
                 $('#sendmessage').show('slow');
+                $('#errormessage').hide('slow');
               else
                 $('#errormessage').show('slow');
+                $('#sendmessage').hide('slow');
             }
             catch(e)
             {
