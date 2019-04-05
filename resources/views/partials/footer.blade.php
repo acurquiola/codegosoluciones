@@ -1,3 +1,8 @@
+
+
+    </section><!-- #contact -->
+
+</main>
 <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -36,7 +41,7 @@
             <h4>Suscríbete</h4>
             <p>Recibe las promociones de nuestros servicios</p>
             <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
+              <input type="email" name="email"><input type="submit"  value="Enviar">
             </form>
           </div>
 

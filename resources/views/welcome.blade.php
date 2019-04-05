@@ -17,7 +17,7 @@
       <div class="container-fluid">
 
         <div class="section-header">
-          <h3>Comunícate con nosotros</h3>
+          <h3>Comunícate con Nosotros</h3>
         </div>
 
         <div class="row wow fadeInUp">
@@ -35,27 +35,28 @@
             <div class="col-lg-8">
               <div class="form">
                 <div id="sendmessage">¡Tu mensaje ha sido enviado!</div>
-                <div id="errormessage"></div>
-                <form action="" method="post" role="form" class="contactForm">
+                <div id="errormessage">Ocurrió un error, inténtalo nuevamente.</div>
+                <form method="POST" action="{{ action('ContactoController@enviar') }}" role="form" class="contactForm" id="formulario">
+                  @csrf
                   <div class="form-row">
                     <div class="form-group col-lg-6">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:2" data-msg="Ingresa tu nombre "/>
                       <div class="validation"></div>
                     </div>
                     <div class="form-group col-lg-6">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Ingresa un email válido" />
                       <div class="validation"></div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:2" data-msg="Ingresa un asunto para el mensaje" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escribe el mensaje" placeholder="Por favor, escribe el mensaje"></textarea>
                     <div class="validation"></div>
                   </div>
-                  <div class="text-center"><button type="submit" title="Send Message">ENVIAR</button></div>
+                  <div class="text-center"><button type="submit" title="Send Message" id="sendMessage-button">ENVIAR</button></div>
                 </form>
               </div>
             </div>
@@ -64,8 +65,41 @@
         </div>
 
       </div>
-    </section><!-- #contact -->
-
-  </main>
 
 @endsection('content')
+
+@section('script')
+  <script>
+    
+    $(document).ready(function() {
+      $('#sendMessage-button').click(function ( e ) {
+        var data = $('#formulario').serializeArray();
+        var method = 'POST';
+        var url = "{{ action('ContactoController@enviar') }}";
+      
+        $.ajax(
+          {data:data,
+          method:method,
+          url:url
+          }
+        )
+        .always(function(response, status, responseObject){
+          try{
+            var respuesta=JSON.parse(responseObject.responseText);
+              if(respuesta.status==1)
+                $('#sendmessage').show('slow');
+              else
+                $('#errormessage').show('slow');
+            }
+            catch(e)
+            {
+              $('#errormessage').html('Error procesando la solicitud');
+              $('#errormessage').show('slow');
+            }
+          })
+        
+        e.preventDefault();
+      })
+    })
+  </script>
+@endsection('script')

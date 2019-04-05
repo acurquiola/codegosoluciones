@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/enviar', 'ContactoController@enviar')->name('enviar');
+
 
 Auth::routes();
 
