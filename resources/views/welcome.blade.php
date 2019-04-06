@@ -70,7 +70,18 @@
 
 @section('script')
   <script>
-	
+
+    //Procesar el texto de la validación de los campos en el request
+    function processValidation(json){
+        var mensaje="";
+        for(var o in json){
+            $.each(json[o], function(index,value){
+                mensaje+=value+"<br>";
+            })
+        }
+        return mensaje;
+    }
+
 	$(document).ready(function() {
 	  $('#sendMessage-button').click(function ( e ) {
 		var data = $('#formulario').serializeArray();
@@ -84,21 +95,32 @@
 		  }
 		)
 		.always(function(response, status, responseObject){
-		  try{
-			var respuesta=JSON.parse(responseObject.responseText);
-			if(respuesta.status==1){
-			  $('#sendmessage').html(respuesta.text).show('slow');
-			  $('#errormessage').hide('slow');
+			if(status=="error"){
+				if(response.status==422){
+					var content       = document.createElement('div');
+					content.innerHTML = processValidation(response.responseJSON.errors);
+
+					$('#sendmessage').hide('slow');
+					$('#errormessage').html(content).show('slow');
+				}
 			}else{
-				$('#sendmessage').hide('slow');
-				$('#errormessage').html(respuesta.text).show('slow');
-			  }
+			  	try{
+					var respuesta=JSON.parse(responseObject.responseText);
+					if(respuesta.status==1){
+						$('#sendmessage').html(respuesta.text).show('slow');
+						$('#errormessage').hide('slow');
+						$('#formulario').get(0).reset();
+					}else{
+						$('#sendmessage').hide('slow');
+						$('#errormessage').html(respuesta.text).show('slow');
+						
+					}
+				}catch(e){
+				  $('#errormessage').html('Error procesando la solicitud');
+				  $('#errormessage').show('slow');
+				}
 			}
-			catch(e)
-			{
-			  $('#errormessage').html('Error procesando la solicitud');
-			  $('#errormessage').show('slow');
-			}
+
 		  })
 		
 		e.preventDefault();
