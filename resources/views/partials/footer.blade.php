@@ -1,7 +1,5 @@
 
 
-</section><!-- #contact -->
-
 </main>
 <footer id="footer">
 	<div class="footer-top">
@@ -24,7 +22,7 @@
 				<div class="col-lg-3 col-md-6 footer-contact footer-links">
 					<h4>Contáctanos</h4>
 					<p>
-						<a href="https://wa.me/+5491122547749"> <strong>Teléfono: </i></strong> +45 11 22547749 </a><br>
+						<a href="https://wa.me/+5491122547749"> <strong>Teléfono: </i></strong> +54 11 22547749 </a><br>
 						<a href="mailto:info@codego-soluciones.com"> <strong>Email:</strong> info@codego-soluciones.com</a><br>
 					</p>
 
