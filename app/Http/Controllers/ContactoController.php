@@ -5,6 +5,8 @@ use Mail;
 
 use App\Mail\Contacto; 
 use Illuminate\Http\Request;
+use App\Rules\ValidRecaptcha;
+
 
 class ContactoController extends Controller
 {
@@ -17,7 +19,8 @@ class ContactoController extends Controller
         $request->validate([
             'name'    => 'required|string|max:255',
             'email'   => 'required|string|email|max:255',
-            'message' => 'required'
+            'message' => 'required',
+            'g-recaptcha-response' => ['required', new ValidRecaptcha]
         ]);
 
         $forminput = [
@@ -33,6 +36,6 @@ class ContactoController extends Controller
             return response()->json(['status' => '1', 'text' => 'Mensaje enviado exitósamente']);
         else
             return response()->json(['status' => '0', 'text' => 'Ocurrió un error enviando el mensaje']);
-        
+       
     }
 }

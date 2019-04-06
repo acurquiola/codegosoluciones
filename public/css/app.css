@@ -20,3 +20,17 @@
 .footer-contact a:hover{
 	text-decoration: underline;
 }
+
+#formulario-email button{
+    background: #007bff;
+    border: 2px solid #007bff;
+    color: #fff;
+    padding: 4px;
+}
+
+#formulario-email button:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 4px;
+}

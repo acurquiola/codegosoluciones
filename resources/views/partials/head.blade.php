@@ -22,8 +22,11 @@
   <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
   <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
   <link href="{{ asset('lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('lib/alertifyjs/css/alertify.min.css') }}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
