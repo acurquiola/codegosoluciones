@@ -15,7 +15,7 @@
                  <div class="box">
                      <div class="icon"><i class="fas fa-code" style="color: #ff689b;"></i></div>
                      <h4 class="title"><a href="">Web Corporativa</a></h4>
-                     <p class="description">Diseños personalizados y a la medida de tus necesidades.</p>
+                     <p class="description">La información de tu empresa organizada en un solo lugar.</p>
                  </div>
              </div>
              <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
@@ -37,7 +37,7 @@
                  <div class="box">
                      <div class="icon"><i class="fas fa-tools" style="color: #41cf2e;"></i></div>
                      <h4 class="title"><a href="">Autoadministrable</a></h4>
-                     <p class="description">Cuentas con un panel administrativo para cambiar toda la información cómo, cuándo y dónde quieras</p>
+                     <p class="description">Cuentas con un panel administrativo para cambiar toda la información cómo, cuándo y dónde quieras.</p>
                  </div>
              </div>    
 
@@ -52,7 +52,7 @@
                  <div class="box">
                      <div class="icon"><i class="fas fa-mobile-alt" style="color: #e5753d;"></i></div>
                      <h4 class="title"><a href="">Diseño Responsivo</a></h4>
-                     <p class="description">Tu sitio web se verá increíble en todos los dispositivo.</p>
+                     <p class="description">Los sitios web se ven increíble en todos los dispositivos.</p>
                  </div>
              </div>    
              
@@ -67,7 +67,7 @@
                  <div class="box">
                      <div class="icon"><i class="fas fa-at" style="color: #914E93;"></i></div>
                      <h4 class="title"><a href="">Correo Empresarial</a></h4>
-                     <p class="description">Dale identidad a tu correo haciéndolo de tu dominio.</p>
+                     <p class="description">La identidad de tu empresa se puede mostrar hasta en los emails.</p>
                  </div>
              </div>
 
