@@ -27,7 +27,6 @@ class Contacto extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contacto')->from(env('MAIL_FROM_ADDRESS'))
-        ->subject('Mensaje desde la web')->with('datos', $this->datos);
+        return $this->markdown('emails.contacto')->from('anitaurquiola28@gmail.com')->subject('Mensaje desde la web')->with('datos', $this->datos);
     }
 }

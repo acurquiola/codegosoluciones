@@ -15,20 +15,24 @@ class ContactoController extends Controller
     {
 
         $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255',
-            'message'=>'required'
+            'name'    => 'required|string|max:255',
+            'email'   => 'required|string|email|max:255',
+            'message' =>'required'
         ]);
 
         $forminput = [
-            'nombre' => $request->input('name'),
-            'email' => $request->input('email'),
+            'nombre'  => $request->input('name'),
+            'email'   => $request->input('email'),
+            'asunto'  => $request->input('subject'),
             'mensaje' => $request->input('message')
         ];
 
-        Mail::to('info@codego-soluciones.com')->send(new Contacto($forminput));
+        $envio = Mail::to('info@codego-soluciones.com')->send(new Contacto($forminput));
 
-        return response()->json(['status' => '1', 'text' => 'Mensaje enviado exitósamente']);
+        if($envio)
+            return response()->json(['status' => '1', 'text' => 'Mensaje enviado exitósamente']);
+        else
+            return response()->json(['status' => '0', 'text' => 'Ocurrió un error enviando el mensaje']);
         
     }
 }
