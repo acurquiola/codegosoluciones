@@ -27,7 +27,6 @@ class Contacto extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contacto')->from($this->datos['email'])
-        ->subject('Mensaje desde la web')->with('datos', $this->datos);
+        return $this->markdown('emails.contacto')->from('info@codego-soluciones.com')->subject('Mensaje desde la web')->with('datos', $this->datos);
     }
 }

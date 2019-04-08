@@ -1,8 +1,8 @@
 @component('mail::message')
 # {{ $datos['nombre'] }}
-email: {{ $datos['email'] }}
-asunto: {{ $datos['asunto'] }}
-mensaje:
+E-mail: {{ $datos['email'] }}<br>
+Asunto: {{ $datos['asunto'] }}<br>
+Mensaje:
 @component('mail::panel')
     {{ $datos['mensaje'] }}
 @endcomponent
