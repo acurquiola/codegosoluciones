@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <title>{{ config('app.name') }}</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="website, posicionamiento, diseño, desarrollo, emprendimiento, venta en internet, hacer crecer tu negocio, codego, soluciones, web" name="keywords"> 
+  <meta name="description"
+    content="CodeGo Soluciones brinda soluciones web a tus emprendimientos. Realizamos diseños a la medida y proyectados a hacer crecer tu emprendimiento. ">
+  <meta name="author" content="CodeGo Soluciones">
 
   <!-- Favicons -->
   <link href="{{ asset('img/logos/favicon.png') }}" rel="icon">
